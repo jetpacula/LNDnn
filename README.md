@@ -12,6 +12,8 @@ Current maximum IoU metric is ~60%.
 
 After gaining results with DeepLab network I have used static quantization to reduce the network size.
 
+Just in case i've left .py file, you may want to use it in case Jupyter kernel crashes.
+
 #  Future work
 1. To use all three source images per field, combining them into one tensor.
 Now torch "stack" method combines them into a tensor with 3 subtensors, which is problematic to use during training.
