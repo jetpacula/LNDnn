@@ -2,6 +2,9 @@
 
 Purpose of the project- gain ability to spot mineral deficiency of the soil on aerial RGB imagery
 
+the [dataset](https://registry.opendata.aws/intelinair_longitudinal_nutrient_deficiency/) contains a number of fields, one directory for which contains 3 RGB images, a mask and boundry image.
+At this point i have used only one RGB and a mask image (refer to future work).
+
 At first dataset is downloaded from public S3.
 Then with custom dataloader class I process source images to RGB objects, and masks to 1-layered image and convert it to tensors afterwards.
 After defining loss, optimizers and model itself the training occurs. 
